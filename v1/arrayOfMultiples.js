@@ -22,3 +22,11 @@ function arrayOfMultiples(num, length) {
 
     return arr;
 }
+
+// Sample tests
+
+console.log(`Testcase: 7, 5 \nExpected output: [7, 14, 21, 28, 35] \nOutput: ${arrayOfMultiples(7, 5)} \n`);
+
+console.log(`Testcase: 12, 10 \nExpected output: [12, 24, 36, 48, 60, 72, 84, 96, 108, 120] \nOutput: ${arrayOfMultiples(12, 10)} \n`);
+
+console.log(`Testcase: 17, 6 \nExpected output: [17, 34, 51, 68, 85, 102] \nOutput: ${arrayOfMultiples(17, 6)} \n`);

@@ -10,7 +10,7 @@ Examples
     marathonDistance([1, 9, 5, 8, 2]) ➞ true
 
     marathonDistance([-6, 15, 4]) ➞ true
-    
+
 Notes
     Items in the array will always be integers.
     Items in the array may be negative or positive, but since negative distance isn't possible, find a way to convert the sum of the distance into a positive integer.
@@ -30,3 +30,11 @@ function marathonDistance(distances) {
 
     return sum == 25;
 }
+
+// Sample tests
+
+console.log(`Testcase: [1, 2, 3, 4] \nExpected output: false \nOutput: ${marathonDistance([1, 2, 3, 4])} \n`);
+
+console.log(`Testcase: [1, 9, 5, 8, 2]) \nExpected output: true \nOutput: ${marathonDistance([1, 9, 5, 8, 2])} \n`);
+
+console.log(`Testcase: [-6, 15, 4] \nExpected output: true \nOutput: ${marathonDistance([-6, 15, 4])} \n`);

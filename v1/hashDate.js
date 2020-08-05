@@ -4,10 +4,10 @@ return the day:day, month:month and year:year as key value pairs in a hash.
 
 */
 
-function dateObject() {
-    date = new Date();
+function hashDate() {
+    let date = new Date();
 
-    obj = {
+    let obj = {
         day: date.getDay(),
         month: date.getMonth(),
         year: date.getYear()
@@ -15,3 +15,8 @@ function dateObject() {
 
     return obj;
 }
+
+// Sample tests
+
+console.log(`Testcase: day: current day, month: current month, year: current year \nExpected output: false \nOutput: `);
+console.log(hashDate());

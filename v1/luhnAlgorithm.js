@@ -20,3 +20,9 @@ function luhnAlgorithm(cardNumber) {
     }
     return sum % 10 == 0;
 }
+
+// Sample tests
+
+console.log(`Testcase: 4847352989263094 \nExpected output: true \nOutput: ${luhnAlgorithm(4847352989263094)} \n`);
+
+console.log(`Testcase: 4847352989263090 \nExpected output: false \nOutput: ${luhnAlgorithm(4847352989263090)} \n`);

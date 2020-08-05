@@ -38,3 +38,9 @@ function comparePoints(a, b) {
 
     return res
 }
+
+// Sample tests
+
+console.log(`Testcase: [1, 2, 3], [3, 2, 1] \nExpected output: [1, 1] \nOutput: ${comparePoints([1, 2, 3], [3, 2, 1])} \n`);
+
+console.log(`Testcase: [1, 2, 3], [3, 3, 1] \nExpected output: [1, 2] \nOutput: ${comparePoints([1, 2, 3], [3, 3, 1])} \n`);
