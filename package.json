@@ -1,0 +1,23 @@
+{
+  "name": "wejapa_assessments",
+  "version": "1.0.0",
+  "description": "Small JavaScript challenges done during Wejapa internship",
+  "main": "index.js",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onshimiye/wejapa_assignments.git"
+  },
+  "author": "Olivier Nshimiye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/onshimiye/wejapa_assignments/issues"
+  },
+  "homepage": "https://github.com/onshimiye/wejapa_assignments#readme"
+}
