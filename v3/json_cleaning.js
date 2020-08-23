@@ -14,7 +14,7 @@ https.get('https://coderbyte.com/api/challenges/json/json-cleaning', (res) => {
 
         clean(data);
 
-        fs.appendFile(path.join(__dirname, 'result.txt'), JSON.stringify(data), err => {
+        fs.appendFile(path.join(__dirname, 'res.json'), JSON.stringify(data), err => {
             if (err)
                 throw err;
             console.log('Done cleaning! \nCheck your new data in result.txt');
@@ -29,15 +29,19 @@ https.get('https://coderbyte.com/api/challenges/json/json-cleaning', (res) => {
 function clean(object) {
     for (let key in object) {
         if (object[key] == 'N\/A' || object[key] == '-' || object[key] == '') {
-            // delete by splice to avoid leaving empty slots in the array
+
             if (Array.isArray(object)) {
+                // delete by splice to avoid leaving empty slots in the array
+
                 object.splice(key, 1);
             } else {
                 delete object[key];
             }
         }
-        // recurse on nested objects
+
         if (typeof(object[key]) == 'object') {
+            // recurse on nested objects
+
             clean(object[key]);
         }
     }
